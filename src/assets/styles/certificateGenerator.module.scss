@@ -1,0 +1,206 @@
+.wrapper {
+  background-color: #222222;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  overflow: auto;
+
+  .container {
+    border: 1px solid #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 65rem;
+    margin-bottom: 3rem;
+  }
+
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+
+    label {
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+
+    input {
+      padding: 1rem;
+      font-size: 1.2rem;
+      outline: none;
+      border: none;
+      width: 500px;
+      border-radius: 10px;
+    }
+    
+  }
+
+}
+
+.certificateWrapper {
+  background-color: #fff;
+  padding: 2rem;
+  color: #222222;
+  width: 1000px;
+  text-align: center;
+
+  .certificateContainer {
+    border: 10px solid #272727;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  p{
+    font-size: 20px;
+  }
+  .smallText {
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .primaryHeadingText {
+    color: #272727;
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-style:normal;
+    margin-block: 0.5rem; // margin-top & margin-bottom
+  }
+.buttons{
+  .button_margin{
+    margin-top: 3rem;
+    margin-right: 1px;
+    transform: scale3d(1.5, 1.5, 1.5);
+  
+  }
+}
+
+  .CompanyLogoBlock {
+    display: inline-block;
+    .CompanyLogo {
+      height: 100px;
+      width: 150px;
+      margin-bottom: 10px;
+    }
+    .horizontalBar {
+      margin: auto;
+      display: block;
+      height: 1px;
+      width: 200px;
+      background-color: #000;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+button {
+  border: 2px solid #000;
+  border-radius: 10px;
+  width: 50%;
+  transform: translate(50%);
+  outline: none;
+  background-color: #e7e7e7;
+  padding: 1rem 1.5rem;
+  font-size: 16px;
+  box-shadow: 0px 0px 0px 2px #fff;
+  transition: all 300ms ease;
+  cursor: pointer;
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+.additionalDetailsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .additionalDetails_left,
+  .additionalDetails_right {
+    flex: 1;
+    padding: 10px;
+
+    p {
+      margin-block: 10px;
+      padding-left: 70px;
+      font-size: 20px;
+      font-weight: 400;
+      color: #272727;
+
+
+      span {
+        font-weight: bold;
+        color: #272727;
+      }
+    }
+  }
+
+  .additionalDetails_left {
+    //background-color: #f0f0f0; // You can add your desired background color
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    p{
+      font-size: 25px;
+    }
+  }
+
+  .additionalDetails_right {
+    //background-color: #e0e0e0; // You can add your desired background color
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    p{
+      font-size: 25px;
+    }
+  }
+}
+
+.social_link{
+   a{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+.whatsapp_group{
+  background-color: #222222;
+  border-radius: 10px;
+  padding: 10px;
+  width: 50%;
+  transform: translate(222px);
+  margin-top: 0;
+  
+  a{
+    color: #fff;
+  }
+  &:hover{
+    a{
+      color:  #222222;
+    }
+    
+    background-color: #e7e7e7;
+  }
+  
+
+}
+.whatsapp_channel_and_insta{
+  background-color: #e7e7e7;
+  border: 2px solid #272727;
+  border-radius: 10px;
+  width: 50%;
+  transform: translate(230px);
+  &:hover{
+    a{
+      color: #e7e7e7;
+    }
+    background-color: #272727;
+  }
+}
