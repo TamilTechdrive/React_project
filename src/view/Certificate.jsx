@@ -86,21 +86,21 @@ const Certificate = ({
           style={{ backgroundImage: `url(${backgroundImgUrl})`,backgroundSize: "cover",
           backgroundRepeat: "no-repeat", }}>
             {/* Your Company Heading here */}
-          <p className={styles.primaryHeadingText}>{Heading}</p>
+          <p className={styles.primaryHeadingText} >{Heading}</p>
             {/* Your CompanyLogo Here */}
           <div className={styles.CompanyLogoBlock}>
             <img className={styles.CompanyLogo} src={CompanyLogo?.preview || ''} alt="" />
             <span className={styles.horizontalBar} />
-            <span className={styles.smallText}>{CompanyDetails}</span>
+            <span className={styles.CompanyDetails}>{CompanyDetails}</span>
           </div>
               {/* Your Company Related details here */}
           <div className={`${styles.additionalDetailsContainer}`}>
              <div className={`${styles.additionalDetails_left}`}>
                <p>
-                 Company :<span>{name}</span>
+                 Company : <span>{name}</span>
                </p>
                <p>
-                 Position :<span>{Position}</span>
+                 Position : <span>{Position}</span>
                </p>
                <p>
                  Degree : <span>{degree}</span>
@@ -109,19 +109,18 @@ const Certificate = ({
            
              <div className={`${styles.additionalDetails_right}`}>
                <p>
-                 Batch :<span>{batch}</span>
+                 Batch : <span>{batch}</span>
                </p>
                <p>
                  Salary : <span>{salary}</span>
                </p>
                <p>
-                 Experience :<span> {experience}</span>
+                 Experience : <span> {experience}</span>
                </p>
              </div>
            </div>
            {/* Your Company, Date Of Conduct STRART & END here*/}
-          <p>Date of Conduct Start & End : 
-             <span className={styles.smallText}>{`from ${
+          <p className={styles.startend_date}>Date of Conduct Start & End : <span className={styles.smallText}>{`from ${
             dateOfConductStart ? moment(dateOfConductStart).format('MMMM YYYY') : '-'
           } to ${dateOfConductEnd ? moment(dateOfConductEnd).format('MMMM YYYY') : '-'}`}</span>
           </p>
