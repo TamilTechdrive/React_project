@@ -24,7 +24,9 @@
 
   .modalContainer {
     background-color: #fff;
+    margin-top: 3rem; //36rem
+    overflow: auto;
     padding: 3rem;
-    margin-top: 36rem;
+    height: -webkit-fill-available;
   }
 }

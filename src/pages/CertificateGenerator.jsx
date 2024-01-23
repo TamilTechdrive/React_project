@@ -60,7 +60,7 @@ const CertificateGenerator = () => {
 
 
   return (
-    <>
+    <>     
       <div className={styles.wrapper}>
         <div className={styles.container}>
           <form onSubmit={handleSubmitForm}>
@@ -165,6 +165,7 @@ const CertificateGenerator = () => {
       <Modal isOpen={isOpenModal} handleClose={() => setIsOpenModal(false)}>
         <Certificate {...formState} />
       </Modal>
+      
     </>
   );
 };
