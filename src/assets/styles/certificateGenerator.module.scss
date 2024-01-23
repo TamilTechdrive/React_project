@@ -14,6 +14,7 @@
     border-radius: 10px;
     margin-top: 3rem;  //65rem
     margin-bottom: 3rem;
+    width: -webkit-fill-available;
   }
 
   .inputGroup {
@@ -32,7 +33,6 @@
       font-size: 1.2rem;
       outline: none;
       border: none;
-      width: 500px;
       border-radius: 10px;
     }
     
@@ -239,6 +239,24 @@ button {
   -webkit-text-stroke-width: thin;
 }
 
-.header_text{
-  text-align: center;
-}
+@media only screen and (min-width: 768px) {
+  /* styles for devices with a minimum screen width of768px */
+  .wrapper{
+  .container {
+    border: 1px solid #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 3rem;  //65rem
+    margin-bottom: 3rem;
+    width:fit-content;
+  }
+  input{
+    padding: 1rem;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    width: 500px;
+    border-radius: 10px;
+  }
+  }
+  }
